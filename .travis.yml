@@ -1,8 +1,9 @@
 language: ruby
-dist: focal
+dist: bionic  # Use Ubuntu 18.04
 jobs:
   include:
     - rvm: 2.3.8
+      group: previous
       before_install:
         - sudo apt-get update
         - rvm reinstall 2.3.8 --disable-binary
