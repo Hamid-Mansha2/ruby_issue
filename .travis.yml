@@ -1,0 +1,11 @@
+language: ruby
+dist: focal  # Use Ubuntu 20.04
+rvm:
+  - 2.3.8
+before_install:
+  - sudo apt-get update
+install:
+  - gem install bundler
+  - bundle install
+script:
+  - bundle exec rake spec
